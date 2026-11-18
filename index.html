@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>KOKIYOL Ayisyen – Authentic Haitian Donuts</title>
+<meta name="description" content="KOKIYOL Ayisyen by Lord Is Good Donuts: authentic handmade Haitian donuts (Kokiyòl Ayisyen). Single piece, Small box (12) or Family box (24) with free shipping. A Taste of Haiti in Every Bite!">
+<meta name="theme-color" content="#000000">
+<!-- TODO : remplacer https://VOTRE-DOMAINE par l'adresse réelle du site (même valeur que BASE_URL) -->
+<link rel="canonical" href="https://VOTRE-DOMAINE/">
+<link rel="alternate" hreflang="ht" href="https://VOTRE-DOMAINE/?lang=ht">
+<link rel="alternate" hreflang="fr" href="https://VOTRE-DOMAINE/?lang=fr">
+<link rel="alternate" hreflang="en" href="https://VOTRE-DOMAINE/?lang=en">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="KOKIYOL Ayisyen">
+<meta property="og:title" content="KOKIYOL Ayisyen – Authentic Haitian Donuts">
+<meta property="og:description" content="A Taste of Haiti in Every Bite! Handmade Haitian kokiyòl by Lord Is Good Donuts.">
+<meta property="og:image" content="https://VOTRE-DOMAINE/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preload" as="image" href="img/logo.webp" type="image/webp">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main" data-t="skip"></a>
+<div class="bar" data-t="bar"></div>
+
+<header>
+  <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.jpg" width="54" height="54" alt="KOKIYOL Ayisyen"></picture>
+  <div class="bn"><b>KOKIYOL Ayisyen</b><small data-t="tag"></small></div>
+  <nav aria-label="Menu"><a href="#pwodwi" data-t="n1"></a><a href="#sou-nou" data-t="n3"></a><a href="#swiv" data-t="t4"></a></nav>
+  <div id="lg" role="group" data-ta="langLabel">
+    <button type="button" data-l="ht" lang="ht">HT</button><button type="button" data-l="fr" lang="fr">FR</button><button type="button" data-l="en" lang="en">EN</button>
+  </div>
+  <button type="button" id="hc" class="js-open-cart" data-ta="cartAria" aria-haspopup="dialog" aria-controls="cp">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.7 12.4a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 7H6"/></svg>
+    <span id="hcn" aria-hidden="true">0</span>
+  </button>
+</header>
+
+<main id="main">
+  <div class="hero">
+    <div class="txt">
+      <h1 data-t="h1"></h1>
+      <p data-t="hp"></p>
+      <a class="btn" href="#pwodwi" data-t="hb"></a>
+    </div>
+    <div class="sw" id="sw" aria-roledescription="carousel">
+      <div class="st" id="st"></div>
+      <button type="button" class="ar l" id="pv" data-ta="prev">‹</button>
+      <button type="button" class="ar r" id="nx" data-ta="next">›</button>
+      <div class="dt" id="dt"></div>
+    </div>
+  </div>
+
+  <section id="pwodwi" aria-labelledby="prodTitle">
+    <h2 id="prodTitle" data-t="prodTitle"></h2>
+    <div class="grid" id="pk"></div>
+    <p class="note" id="shNote"></p>
+  </section>
+
+  <section id="sou-nou" aria-labelledby="aboutTitle">
+    <h2 id="aboutTitle" data-t="aboutTitle"></h2>
+    <div class="about">
+      <div>
+        <p data-t="desc"></p>
+        <h3 data-t="ingTitle"></h3>
+        <p data-t="ing"></p>
+        <p class="allergen" data-t="allergens"></p>
+        <p class="note"><span data-t="soldBy"></span> <b>Lord Is Good Donuts</b> — “Sharing Haitian Sweetness, One Bite at a Time.”</p>
+      </div>
+      <picture><source srcset="img/kokiyol-sachet.webp" type="image/webp"><img src="img/kokiyol-sachet.jpg" width="535" height="640" loading="lazy" decoding="async" alt="KOKIYOL Ayisyen"></picture>
+    </div>
+  </section>
+
+  <section id="swiv" aria-labelledby="trackTitle">
+    <h2 id="trackTitle" data-t="t4"></h2>
+    <form class="card" id="trackForm" novalidate>
+      <label for="code" data-t="lcode"></label>
+      <input id="code" name="code" autocomplete="off" autocapitalize="characters" maxlength="12">
+      <label for="tph" data-t="ltph"></label>
+      <input id="tph" name="phone" type="tel" autocomplete="tel" maxlength="25">
+      <p class="err" id="terr" role="alert"></p>
+      <button class="btn" type="submit" data-t="bchk" style="margin-top:6px"></button>
+      <div id="res" aria-live="polite"></div>
+    </form>
+  </section>
+</main>
+
+<!-- Tiroir du panier (3 étapes) -->
+<div id="ov" class="hide"></div>
+<aside id="cp" class="hide" role="dialog" aria-modal="true" aria-labelledby="cpTitle">
+  <div class="ch"><h2 id="cpTitle" data-t="n2"></h2><button type="button" id="cx" data-ta="close">✕</button></div>
+
+  <ol class="stp" id="stw">
+    <li><i></i><span data-t="st1"></span></li>
+    <li><i></i><span data-t="st2"></span></li>
+    <li><i></i><span data-t="st3"></span></li>
+  </ol>
+
+  <!-- Étape 1 : panier -->
+  <div id="s1">
+    <div id="items"></div>
+    <div class="sumbox" id="sum1"></div>
+    <p class="note" id="free1"></p>
+    <p class="err" id="err1" role="alert"></p>
+    <div class="bt"><button type="button" class="btn" id="b1" data-t="bnext"></button></div>
+  </div>
+
+  <!-- Étape 2 : livraison -->
+  <form id="s2" class="hide" novalidate>
+    <h3 data-t="t3" style="margin:6px 0 0"></h3>
+    <label for="nm" data-t="lnm"></label><input id="nm" name="name" autocomplete="name" maxlength="80" required>
+    <label for="ph" data-t="lph"></label><input id="ph" name="phone" type="tel" autocomplete="tel" maxlength="25" required>
+    <label for="em" data-t="lem"></label><input id="em" name="email" type="email" autocomplete="email" maxlength="120" required aria-describedby="emHint">
+    <p class="note" id="emHint" data-t="lemHint" style="margin:2px 0 0"></p>
+    <fieldset style="border:0;padding:0;margin:0">
+      <legend data-t="lmo" style="display:block;margin:10px 0 4px;color:#4f483d;font-size:14px;font-weight:600;padding:0"></legend>
+      <label class="chk"><input type="radio" name="mode" value="delivery" checked> <span data-t="m0"></span></label>
+      <label class="chk" id="pickupOpt"><input type="radio" name="mode" value="pickup"> <span data-t="m1"></span></label>
+    </fieldset>
+    <div id="addr">
+      <label for="ad" data-t="lad"></label><input id="ad" name="address" autocomplete="street-address" maxlength="120" data-p="pad">
+      <label for="ct" data-t="lct"></label><input id="ct" name="city" autocomplete="address-level2" maxlength="60">
+      <div class="two">
+        <div><label for="stt" data-t="lst"></label><select id="stt" name="state" autocomplete="address-level1"></select></div>
+        <div><label for="zp" data-t="lzp"></label><input id="zp" name="zip" inputmode="numeric" autocomplete="postal-code" maxlength="10"></div>
+      </div>
+    </div>
+    <p class="note hide" id="pickupInfo"></p>
+    <label for="nt" data-t="lnt"></label><textarea id="nt" name="notes" rows="2" maxlength="500"></textarea>
+    <p class="err" id="err2" role="alert"></p>
+    <div class="bt"><button type="button" class="btn o" id="b2a" data-t="bback"></button><button type="submit" class="btn" id="b2" data-t="bnext"></button></div>
+  </form>
+
+  <!-- Étape 3 : paiement -->
+  <form id="s3" class="hide" novalidate>
+    <label for="pay" data-t="lpy"></label>
+    <select id="pay" name="payment"></select>
+    <p class="note" id="payinfo" aria-live="polite"></p>
+    <h3 data-t="summary" style="margin:14px 0 4px;font-size:16px"></h3>
+    <div id="sum3"></div>
+    <label class="chk"><input type="checkbox" id="terms" required> <span data-t="terms"></span></label>
+    <p class="err" id="err3" role="alert"></p>
+    <div class="bt"><button type="button" class="btn o" id="b3a" data-t="bback"></button><button type="submit" class="btn" id="go" data-t="bgo"></button></div>
+  </form>
+
+  <div id="done" class="hide" tabindex="-1"></div>
+</aside>
+
+<footer>
+  <div class="fg">
+    <div>
+      <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.jpg" width="64" height="64" loading="lazy" alt=""></picture>
+      <b style="color:#fff">KOKIYOL Ayisyen</b>
+      <p data-t="tag"></p>
+      <p class="note" style="color:#bbb"><span data-t="soldBy" style="display:inline;color:#bbb"></span> Lord Is Good Donuts</p>
+    </div>
+    <div><h3 data-t="fl"></h3><a href="#pwodwi" data-t="n1"></a><a href="#sou-nou" data-t="n3"></a><a href="#swiv" data-t="t4"></a><a href="conditions.html" data-t="legal"></a></div>
+    <div><h3 data-t="fc"></h3><a href="tel:+14108295267">📞 410-829-5267</a><a href="https://wa.me/14108295267" target="_blank" rel="noopener">💬 WhatsApp</a><span data-t="fo" style="color:#aaa"></span></div>
+    <div><h3 data-t="fp"></h3><div id="fpay"></div></div>
+  </div>
+  <p class="thanks" data-t="thanks"></p>
+  <div class="cp" data-t="cp"></div>
+</footer>
+
+<button type="button" class="btn js-open-cart" id="cartbtn" aria-haspopup="dialog" aria-controls="cp">🛒 <span id="cn">0</span> · <span id="ct2">$0.00</span></button>
+<div class="sr-only" aria-live="polite" id="live"></div>
+
+<script src="config.js"></script>
+<script src="js/pricing.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
